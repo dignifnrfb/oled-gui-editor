@@ -1,12 +1,12 @@
 # OLED GUI Editor
 
+[**中文文档**](README_CN.md)
+
 A cross-platform visual editor for OLED screens. Design your UI graphically and generate ready-to-use STM32 C code.
 
-基于 Electron + Vue 3 的跨平台 OLED 屏幕可视化编辑器，支持自由设计界面并一键生成 STM32 可用的 C 代码。
+Built with Electron + Vue 3 + TypeScript.
 
----
-
-## Features / 功能特性
+## Features
 
 - **Visual Editing** — Draw pixels, lines, rectangles, circles, ellipses, rounded rectangles, polygons, text and images directly on a simulated OLED screen
 - **Multi-page Support** — Create multiple pages with navigation links and transitions
@@ -18,7 +18,7 @@ A cross-platform visual editor for OLED screens. Design your UI graphically and 
 - **Undo/Redo** — Full history support
 - **Keyboard Shortcuts** — Efficient workflow with hotkeys
 
-## Tech Stack / 技术栈
+## Tech Stack
 
 | Tech | Purpose |
 |------|---------|
@@ -29,7 +29,7 @@ A cross-platform visual editor for OLED screens. Design your UI graphically and 
 | Element Plus | UI components |
 | Pinia | State management |
 
-## Getting Started / 快速开始
+## Getting Started
 
 ### Prerequisites
 
@@ -63,7 +63,7 @@ npm run build
 npm run electron:build
 ```
 
-## Supported OLED Configurations / 支持的 OLED 配置
+## Supported OLED Configurations
 
 | Driver | Resolution | Interface |
 |--------|-----------|-----------|
@@ -71,7 +71,7 @@ npm run electron:build
 | SSD1309 | 128x64 | I2C, SPI |
 | SH1106 | 128x64 | I2C, SPI |
 
-## Generated Code Structure / 生成代码结构
+## Generated Code Structure
 
 ```
 output/
@@ -82,12 +82,10 @@ output/
 └── oled_images.h       — Image bitmap data (if any)
 ```
 
-## License / 许可证
+## License
 
 [MIT](LICENSE)
 
-## Contributing / 参与贡献
+## Contributing
 
 Issues and Pull Requests are welcome!
-
-欢迎提交 Issue 和 PR！
