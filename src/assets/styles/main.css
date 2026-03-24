@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #1e1e1e;
+  --bg-secondary: #252526;
+  --bg-tertiary: #2d2d2d;
+  --bg-hover: #3c3c3c;
+  --border-color: #3c3c3c;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #888888;
+  --accent-color: #0078d4;
+  --accent-hover: #1a8adb;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --pixel-on: #00ff00;
+  --pixel-off: #1a1a1a;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow: hidden;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-hover);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.el-button {
+  --el-button-bg-color: var(--bg-tertiary);
+  --el-button-border-color: var(--border-color);
+  --el-button-text-color: var(--text-primary);
+  --el-button-hover-bg-color: var(--bg-hover);
+  --el-button-hover-border-color: var(--accent-color);
+}
+
+.el-input__wrapper {
+  background-color: var(--bg-tertiary) !important;
+  box-shadow: none !important;
+  border: 1px solid var(--border-color);
+}
+
+.el-input__inner {
+  color: var(--text-primary) !important;
+}
+
+.el-select__wrapper {
+  background-color: var(--bg-tertiary) !important;
+  box-shadow: none !important;
+}
+
+.el-popper {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.el-select-dropdown__item {
+  color: var(--text-primary) !important;
+}
+
+.el-select-dropdown__item:hover {
+  background-color: var(--bg-hover) !important;
+}
+
+.el-form-item__label {
+  color: var(--text-secondary) !important;
+}
+
+.el-divider {
+  border-color: var(--border-color);
+}
+
+.el-dialog {
+  --el-dialog-bg-color: var(--bg-secondary);
+  --el-dialog-title-font-size: 16px;
+}
+
+.el-dialog__title {
+  color: var(--text-primary);
+}
+
+.el-tabs__item {
+  color: var(--text-secondary) !important;
+}
+
+.el-tabs__item.is-active {
+  color: var(--accent-color) !important;
+}

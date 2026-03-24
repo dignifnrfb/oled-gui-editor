@@ -1,0 +1,68 @@
+{
+  "name": "oled-gui-editor",
+  "version": "1.0.0",
+  "description": "OLED GUI Editor - Visual editor for OLED screens with C code generation",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build && electron-builder",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "electron:build": "vite build && electron-builder"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@rollup/rollup-win32-x64-msvc": "^4.53.3",
+    "ejs": "^3.1.9",
+    "element-plus": "^2.4.4",
+    "konva": "^9.2.3",
+    "pinia": "^2.1.7",
+    "uuid": "^9.0.1",
+    "vue": "^3.4.0",
+    "vue-konva": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.5",
+    "@types/node": "^20.10.6",
+    "@types/uuid": "^9.0.7",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "concurrently": "^8.2.2",
+    "electron": "^28.3.3",
+    "electron-builder": "^24.9.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10",
+    "vite-plugin-electron": "^0.15.5",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "vue-tsc": "^1.8.27",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.oled.gui.editor",
+    "productName": "OLED GUI Editor",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "resources/icon.ico"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "resources/icon.icns"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "resources/icon.png"
+    }
+  }
+}
