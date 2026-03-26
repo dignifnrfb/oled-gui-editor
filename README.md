@@ -95,3 +95,7 @@ output/
 ## Contributing
 
 Issues and Pull Requests are welcome!
+
+## Links
+
+- [Linux.do](https://linux.do/)

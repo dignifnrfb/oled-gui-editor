@@ -93,3 +93,7 @@ output/
 ## 参与贡献
 
 欢迎提交 Issue 和 PR！
+
+## 友链
+
+- [Linux.do](https://linux.do/)
