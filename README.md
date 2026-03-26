@@ -6,6 +6,12 @@ A cross-platform visual editor for OLED screens. Design your UI graphically and 
 
 Built with Electron + Vue 3 + TypeScript.
 
+## Screenshots
+
+| Visual Editor | Project Settings |
+|:---:|:---:|
+| ![Editor](screenshots/editor.png) | ![Settings](screenshots/settings.png) |
+
 ## Features
 
 - **Visual Editing** — Draw pixels, lines, rectangles, circles, ellipses, rounded rectangles, polygons, text and images directly on a simulated OLED screen
