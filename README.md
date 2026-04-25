@@ -1,10 +1,19 @@
 # OLED GUI Editor
 
-[**中文文档**](README_CN.md)
+[English](README.md) · [中文](README_CN.md)
 
 A cross-platform visual editor for OLED screens. Design your UI graphically and generate ready-to-use STM32 C code.
 
 Built with Electron + Vue 3 + TypeScript.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Node](https://img.shields.io/badge/Node-18+-339933?logo=node.js&logoColor=white)
+![Vue](https://img.shields.io/badge/Vue-3-4FC08D?logo=vue.js&logoColor=white)
+![Electron](https://img.shields.io/badge/Electron-✓-47848F?logo=electron&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-✓-3178C6?logo=typescript&logoColor=white)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+> Stop hand-coding bitmap arrays. Draw the UI, click *Generate*, get drop-in C files for SSD1306 / SSD1309 / SH1106 over I²C or SPI.
 
 ## Screenshots
 
@@ -88,14 +97,25 @@ output/
 └── oled_images.h       — Image bitmap data (if any)
 ```
 
-## License
+## Roadmap
 
-[MIT](LICENSE)
+- [ ] Custom font import (TTF → bitmap font with preview)
+- [ ] Animation timeline (frame-based sprite playback)
+- [ ] More drivers: ST7565, UC1701x, ST7920
+- [ ] Live device preview over USB-CDC
+- [ ] PlatformIO / Arduino-IDE export presets
+- [ ] CLI mode for headless code regeneration in CI
+
+Suggestions welcome — open a [feature request](.github/ISSUE_TEMPLATE/feature_request.yml).
 
 ## Contributing
 
-Issues and Pull Requests are welcome!
+PRs are welcome. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the dev environment, code style, and how to add a new driver or interface.
 
-## Links
+## License
 
-- [Linux.do](https://linux.do/)
+[MIT](LICENSE) © 2026 ZHANG WENCHI (`@dignifnrfb`)
+
+## Acknowledgements
+
+Inspired by and supported by the [Linux.do](https://linux.do/) community.

@@ -1,0 +1,72 @@
+name: Bug report
+description: Report a defect in OLED GUI Editor or its generated code.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug. The more concrete you can be (driver, MCU, repro steps), the faster we can fix it.
+  - type: input
+    id: version
+    attributes:
+      label: Editor version / commit
+      placeholder: "v0.x.y or commit SHA"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where does the bug live?
+      options:
+        - Editor canvas / drawing tools
+        - Project settings / driver selection
+        - Image import / dithering
+        - Generated C code (compile error or wrong output)
+        - Build / packaging (Electron installer)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: driver
+    attributes:
+      label: Driver / resolution / interface (if relevant)
+      placeholder: "SSD1306, 128x64, I2C"
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open editor
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / generated code snippet (if applicable)
+      render: shell
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Pre-flight
+      options:
+        - label: I searched existing issues and this isn't a duplicate.
+          required: true

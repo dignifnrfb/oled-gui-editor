@@ -1,0 +1,43 @@
+name: Feature request
+description: Propose a new feature, driver, or workflow improvement.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do today, and what's getting in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - New OLED driver
+        - New interface (e.g. ST7920, parallel)
+        - Editor UX (canvas, layers, shortcuts)
+        - Code generation (templates, MCU back-ends)
+        - Asset workflow (fonts, images, animations)
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Pre-flight
+      options:
+        - label: I searched existing issues and this isn't a duplicate.
+          required: true
